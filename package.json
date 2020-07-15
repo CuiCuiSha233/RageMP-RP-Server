@@ -1,0 +1,18 @@
+{
+  "name": "rage-mp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/ragemp-c": "github:CocaColaBear/types-ragemp-c#master",
+    "@types/ragemp-s": "github:CocaColaBear/types-ragemp-s#master"
+  },
+  "scripts": {
+    "run": "pm2 start ragemp-server.exe --watch",
+    "stop": "pm2 stop ragemp-server --watch",
+    "nodemon": "nodemon --watch packages --watch client_packages --exec ragemp-server.exe"
+  },
+  "author": "",
+  "license": "ISC"
+}
